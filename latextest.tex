@@ -1,0 +1,132 @@
+\documentclass[a4paper,14pt]{scrreprt}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{floatflt,epsfig} 
+
+\title{
+	Hausaufgabe Physik\\
+	\vspace{5mm}
+	Arbeitsblatt:\\
+	"Aufgaben zu Newton II"\\
+	Aufgabe 9 + 10
+	\vspace{5mm}
+    \paragraph{•}	
+}
+
+\author{Wittmann Florian}
+\date{26.10.2015}
+
+\geometry{a4paper,left=25mm,right=25mm, top=25mm, bottom=25mm}
+
+\begin{document}
+
+\maketitle
+
+\newpage 
+
+
+\makeatletter
+\renewcommand{\thesection}{%
+  \ifnum\c@chapter<1 \@arabic\c@section
+  \else \thechapter.\@arabic\c@section
+  \fi
+}
+\makeatother
+
+
+\section*{9.}
+% Kommentar
+Ein Auto fährt mit der Geschwindigkeit 72km/h gegen einen starren Betonpfeiler. Das Autowrack kommt nach 0,10s zum Stehen. In der Regel ist ein solcher Auffahrunfall für Fahrer und Fahrgäste tödlich.
+
+\vspace{2mm}
+\subsection*{a)}
+Wie groß ist bei dem Unfall die mittlere Verzögerung?
+\begin{flalign}
+\bar { a } &=\frac { \Delta v }{ \Delta t } =\frac { { v }_{ E }-{ v }_{ 0 } }{ \Delta t } =\frac { 0\frac { m }{ s } -\frac { 72 }{ 3,6 } \cdot \frac { m }{ s }  }{ 0,10s } \quad =\quad -200\frac { m }{ { s }^{ 2 } } \quad &
+\end{flalign}
+
+\raggedright Einheitenkontrolle: 
+\begin{flalign}
+[\bar { a } ]&=\frac { \frac { m }{ s }  }{ s } =\frac { m }{ { s }^{ 2 } } \quad &
+\end{flalign}
+
+\vspace{2mm}
+\subsection*{b)}
+\begin{flalign}
+{ F }_{ norm }&=m\cdot g  &\\
+{ F }_{ aufp }&=m\cdot a  &
+\end{flalign}
+\begin{flalign}
+Verhaeltnis: \frac { { F }_{ aufp } }{ { F }_{ norm } } &=\frac { a }{ g } =\frac { 200\frac { m }{ { s }^{ 2 } }  }{ 9,81\frac { m }{ { s }^{ 2 } }  } \quad =\quad 20\quad  &
+\end{flalign}
+Es wirkt das 20-fache der normalen Gewichtskraft auf den Fahrer!
+ 
+
+\vspace{8mm}
+\section*{10.}
+Eine B747 (Jumbo) hat die Gesamtmasse 3,2·10$^5$kg. Die maximale Schubkraft der vier Triebwerke ist insgesamt Fmax = 8,8·10$^5$N. Für den Start wird aus Sicherheitsgründen mit einer Schubkraft von Fs = 8,0·10$^5$N gerechnet. Während der Startphase müssen Rollreibungs- und Luftwiderstandskräfte überwunden werden. die im Mittel zusammen Fr = 2,5·10$^5$N betragen. Der Jumbo beginnt zu fliegen, wenn er eine Geschwindigkeit von v = 300 km/h erreicht hat.
+
+\vspace{2mm}
+\subsection*{a)}
+Wie lange dauert der Start?
+\begin{flalign}
+F&=m\cdot a &\\
+F&=m\cdot \frac { { v }_{ e }-{ v }_{ 0 } }{ \Delta t } &\\
+\Delta t=&{ v }_{ e }\cdot \frac { m }{ { F }_{ S }-{ F }_{ R } } =\frac { 300 }{ 3,6 } \cdot \frac { m }{ s } \cdot \frac { 3,2\cdot { 10 }^{ 5 }kg }{ 8,0\cdot { 10 }^{ 5 }N\quad -\quad 2,5\cdot { 10 }^{ 5 }N } \quad =\quad 48s &
+\end{flalign}
+
+\begin{figure}[h]
+\centering\includegraphics[scale=0.5]{vektoren.jpg}
+\end{figure}
+
+\raggedright Einheitenkontrolle:
+\begin{flalign}
+[\Delta t]&=\frac { m }{ s } \cdot \frac { kg }{ N } =\frac { m }{ s } \cdot \frac { kg }{ kg\cdot \frac { m }{ { s }^{ 2 } }  } \quad =\quad s &
+\end{flalign}
+
+
+
+
+\vspace{2mm}
+\subsection*{b)}
+Wie lange muss die Startbahn mindestens sein?
+\begin{flalign}
+{ { v }_{ E } }^{ 2 }-{ { v }_{ 0 } }^{ 2 }&=2\cdot a\cdot x &\\
+x&=\frac { { { v }_{ E } }^{ 2 }-{ { v }_{ 0 } }^{ 2 } }{ 2\cdot a } =\frac { { { v }_{ E } }^{ 2 }-{ { v }_{ 0 } }^{ 2 } }{ 2\cdot \frac { { F }_{ S }-{ F }_{ R } }{ m }  } =\frac { { \left( \frac { 300 }{ 3,6 } \cdot \frac { m }{ s }  \right)  }^{ 2 } }{ 2\cdot \frac { 8,0\cdot { 10 }^{ 5 }N\quad -\quad 2,5\cdot { 10 }^{ 5 }N }{ 3,2\cdot { 10 }^{ 5 }kg }  } \quad =\quad 2,0km &
+\end{flalign}
+Einheitenkontrolle:
+\begin{flalign}
+[x]&=\frac { { \left( \frac { m }{ s }  \right)  }^{ 2 } }{ \frac { N }{ kg }  } =\frac { \frac { { m }^{ 2 } }{ { s }^{ 2 } }  }{ \frac { kg\cdot \frac { m }{ { s }^{ 2 } }  }{ kg }  } =\quad m &
+\end{flalign}
+
+\vspace{2mm}
+\subsection*{c)}
+Aus Sicherheitsgründen sind die Startbahnen etwa 3,0km lang. Welche Schubkraft reicht bei dieser Startbahnlänge aus? 
+\begin{flalign}
+{ v }_{ e }^{ 2 }-{ v }_{ 0 }^{ 2 }&=2\cdot a\cdot x& \\
+{ v }_{ e }^{ 2 }-{ v }_{ 0 }^{ 2 }&=2\cdot \frac { { F }_{ S }-{ F }_{ R } }{ m } \cdot x &\\
+{ F }_{ S }&=\frac { { { v }_{ e } }^{ 2 } }{ 2\cdot x } \cdot m+{ F }_{ R } &\\
+{ F }_{ S }&=\frac { { \left( \frac { 300 }{ 3,6 } \cdot \frac { m }{ s }  \right)  }^{ 2 } }{ 2\cdot 3,0km } \cdot 3,2\cdot { 10 }^{ 5 }kg+2,5\cdot { 10 }^{ 5 }N\quad =\quad 6,2\cdot { 10 }^{ 5 }N &
+\end{flalign}
+Einheitenkontrolle:
+\begin{flalign}
+{ F }_{ S }&=\frac { { \left( \frac { m }{ s }  \right)  }^{ 2 } }{ m } \cdot kg=\frac { \frac { { m }^{ 2 } }{ { s }^{ 2 } }  }{ m } \cdot kg=\frac { m }{ { s }^{ 2 } } \cdot kg\quad =\quad N &
+\end{flalign}
+
+
+\vspace{3mm}
+\raggedright Würde der Start noch gelingen, wenn eines der vier Triebwerke ausfällt?
+\begin{flalign}
+ { F }_{ b }&=\frac { 3 }{ 4 } \cdot { F }_{ max }=\frac { 3 }{ 4 } \cdot 8,8\cdot { 10 }^{ 5 }N\quad =\quad 6,6\cdot { 10 }^{ 5 }N &
+\end{flalign}
+
+Da 6,6·10$^5$N > 6,2·10$^5$N würde der Start mit einem ausgefallenen Triebwerk noch gelingen!
+
+
+    
+\end{document}
+
